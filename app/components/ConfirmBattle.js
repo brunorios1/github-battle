@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
-var Link = require('react-router').Link;
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 var UserDetails = require('./UserDetails');
 
 function puke (object) {

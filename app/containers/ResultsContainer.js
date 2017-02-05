@@ -20,7 +20,7 @@ var ResultsContainer = React.createClass({
   },
   render: function() {
     return (
-      <Results isLoading={this.state.isLoading} playerInfo={this.props.location.state.playersInfo} scores={this.state.scores} />
+      <Results isLoading={this.state.isLoading} playersInfo={this.props.location.state.playersInfo} scores={this.state.scores} />
     )
   }
 })
