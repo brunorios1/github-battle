@@ -2,11 +2,12 @@ var React = require('react');
 var UserDetails = require('./UserDetails');
 var PropTypes = React.PropTypes;
 var Link = require('react-router').Link;
+var Loading = require('./Loading');
 
 function Results (props) {
 
   if (props.isLoading === true) {
-    return <p> Loading </p>
+    return <Loading text='One moment' speed={100} />
   }
 
   if (props.scores[0] === props.scores[1]) {

@@ -3,6 +3,7 @@ var PropTypes = React.PropTypes;
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 var UserDetails = require('./UserDetails');
+var Loading = require('./Loading');
 
 function puke (object) {
   return <pre>{JSON.stringify(object, null, ' ')}</pre>
@@ -12,7 +13,7 @@ function ConfirmBattle (props) {
   if (props.isLoading === true) {
     return (
       <div>
-        IS LOADING
+        <Loading text='Waiting' speed={800} />
       </div>
     )
   } else {
